@@ -14,7 +14,6 @@ class Student:
 def main():
     students = []
 
-    # Чтение данных из файла
     try:
         with open('students.txt', 'r', encoding='utf-8') as file:
             for line in file:

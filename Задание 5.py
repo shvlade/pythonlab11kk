@@ -34,7 +34,7 @@ if __name__ == "__main__":
         for element, exception in errors:
             print(f"  Элемент: '{element}', Ошибка: {type(exception).__name__}: {exception}")
     else:
-        print("  Ошибок нет!")
+        print("Ошибок нет!")
 
     print("\nИтоговые данные:")
     print(f"  Results: {results}")
