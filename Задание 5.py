@@ -18,16 +18,11 @@ if __name__ == "__main__":
     sqrt_lambda = lambda x: float(x) ** 0.5
 
     test_data = ['4', '16', 'text', '-25', '9.0']
-
-    print("Исходные данные:", test_data)
-    print("Лямбда-функция: lambda x: float(x) ** 0.5")
-    print("-" * 50)
-
     results, errors = safe_apply(sqrt_lambda, test_data)
 
     print("Успешные результаты:")
     for i, (input_val, result) in enumerate(zip(test_data, results), 1):
-        print(f"  {i}. sqrt({input_val}) = {result}")
+        print(f"  {i}. ({input_val}) = {result}")
 
     print("\nОшибки:")
     if errors:
